@@ -118,8 +118,8 @@ img{
 .games img{
     width: 170px;
 }
-.games ul:hover img{
-    transition: 00.5s;
+.games ul a:hover img{
+    transition: 0.5s;
     transform: scale(1.5);
 }
     .about{
