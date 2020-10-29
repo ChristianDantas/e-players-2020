@@ -59,14 +59,69 @@ img{
     padding: 0.9em 0.66em;
 }
 .menu a:hover{
-    background-color: var(--red);
+    background-color: var(--blue);
     text-shadow: 0 0 20px #fff;
     text-decoration: underline;
 }
 #menu-bars{
     display: none;
 }
-
+.banner-container{
+    width: 100%;
+    height: 37.5em;
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h1{
+    color: white;
+    font-size: 60px;
+}
+.banner-text p{
+    color: white;
+    padding-bottom: 10px;
+}
+.banner-text button{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: var(--red);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.banner-text button:hover{
+    transform: scale(1.3);
+    background-color: darkblue;
+    border-radius: 0px;
+}
+.banner-text a{
+    color: white;
+    text-decoration: unset;
+}
+.games{
+    width: 100%;
+    height: 7.5em;
+}
+.games img{
+    width: 170px;
+}
+.games ul:hover img{
+    transition: 00.5s;
+    transform: scale(1.5);
+}
 
 @media screen and (max-width: 74.93em){
 
