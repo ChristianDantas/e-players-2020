@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Players</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/8ea9353849.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="topo">
-        <div class="content flex-spbt-center">
-            <img src="img/Logo 1.svg" alt="Logo E-Players">
-            <nav class="menu">
-                <ul id="meuslinks">
-                    <li><a href="#">Início</a></li>
+    <header class="cabecalho">
+        <div class="content flex-content">
+            <img src="img/Logo 1.svg" alt="logo E-Players">
+            <nav class="menu-cabecalho">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Horarios</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Cadastro/Login</a></li>
+                    <li><a href="">Cadastro/login</a></li>
                 </ul>
-                <a href="#" class="btnMenu" onclick="botaoDoMenu()">
-                    <i class="fas fa-bars"></i>
-                </a>
             </nav>
+            <a href="#" id="header-bars" onclick="botaoDoMenu()"><i class="fas fa-bars"></i></a>
         </div>
     </header>
+    <nav class="menu-cabecalho-response" id="menu-response">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Horarios</a></li>
+            <li><a href="#">Campeonatos</a></li>
+            <li><a href="#">Resultados</a></li>
+            <li><a href="">Cadastro/login</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="banner">
             <div class="banner-container">
@@ -272,16 +278,17 @@
         </div>
         </div>
     </footer>
-    <script>
-        function botaoDoMenu() {
-          var ulDoMenu = document.getElementById("opçoes");
-          if (ulDoMenu.style.display === "flex") {
-            ulDoMenu.style.display = "none";
-          } else {
-            ulDoMenu.style.display = "flex";
-          }
-        }
-     </script>
 </body>
+<script>
+    function botaoDoMenu() {
+      var navMobile = document.getElementById("menu-response");
+
+      if (navMobile.style.display === "block") {
+        navMobile.style.display = "none";
+      } else {
+        navMobile.style.display = "block";
+      }
+    }
+ </script>
 
 </html>
