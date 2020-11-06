@@ -7,7 +7,7 @@
     <title>E-Players</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://kit.fontawesome.com/8ea9353849.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,14 +16,14 @@
         <div class="content flex-spbt-center">
             <img src="img/Logo 1.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul class="flex-spbt-center">
+                <ul id="meuslinks">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Cadastro/Login</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a href="#" class="btnMenu" onclick="botaoDoMenu()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -31,30 +31,23 @@
     </header>
     <main>
         <section class="banner">
-            <picture>
-
-                <source media="(min-width:90em)" srcset="img/banner1440.jpg">
-                    <img src="img/Banner1920.jpg" alt="pilotos de formula 1, hamilton, riccardo, vetel, verstapen">
-                    <source media="(min-width: 61.93em)" srcset="img/banner768.jpg">
-            </picture>
             <div class="banner-container">
-                <div class="banner-content">
+                <img src="img/keyart_crushed_1-removebg-preview__1_-removebg-preview (1).png" alt="">
                   <div class="banner-text">
                     <h1>Liga e-players</h1>
                     <p>O maior portal de campenatos online</p>
                     <button><a href="#">inscreva-se</a></button>
                   </div>
                 </div>
-            </div>
         </section>
         <section class="games">
             <div class="content">
                 <ul class="flex-spbt-center">
-                    <li><a href="#"><img src="img/formula-1-logo-1-1 1.png" alt="logo do formula 1"></a></li>
-                    <li><a href="#"><img src="img/logo-lol-300x131 1.png" alt="logo do legue of legends"></a></li>
-                    <li><a href="#"><img src="img/Counter-Strike-Logo-Transparent-PNG 1.png" alt="logo do counter strike"></a></li>
-                    <li><a href="#"><img src="img/valorant.png" alt="logo do valorant"></a></li>
-                    <li><a href="#"><img src="img/800px-FIFA_series_logo 1.png" alt="logo do fifa"></a></li>
+                    <li class="f1"><a href="#"><img src="img/formula-1-logo-1-1 1.png" alt="logo do formula 1"></a></li>
+                    <li class="lol"><a href="#"><img src="img/logo-lol-300x131 1.png" alt="logo do legue of legends"></a></li>
+                    <li class="cs"><a href="#"><img src="img/Counter-Strike-Logo-Transparent-PNG 1.png" alt="logo do counter strike"></a></li>
+                    <li class="valorant"><a href="#"><img src="img/valorant.png" alt="logo do valorant"></a></li>
+                    <li class="fifa"><a href="#"><img src="img/800px-FIFA_series_logo 1.png" alt="logo do fifa"></a></li>
                 </ul>
             </div>
         </section>
@@ -125,7 +118,7 @@
             <div class="tudo">
             <div class="noticias-principais">
                 <div class="all-box">
-                    <div class="noticias-box">
+                    <div class="noticias-box2">
                         <img src="img/T1 1 (1).png" alt="">
                         <h2>Titulo da Noticia</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
@@ -142,7 +135,7 @@
                          </div>
                     </div>
                     <div class="all-box2">
-                        <div class="noticias-box">
+                        <div class="noticias-box2">
                             <img src="img/T1 1 (4).png" alt="">
                             <h2>Titulo da Noticia</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
@@ -173,7 +166,7 @@
                                           <p>mibr</p>
                                         </div>
                                     </div>
-                                    <p>1/12/2020 19:00</p>
+                                    <p class="data">1/12/2020 19:00</p>
                                     <div class="calendario">
                                        <div class="time3">
                                         <p>SK</p>
@@ -185,7 +178,7 @@
                                             <p>Fúria</p>
                                         </div>
                                     </div>
-                                    <p>1/12/2020 19:00</p>
+                                    <p class="data">1/12/2020 19:00</p>
                                     <div class="calendario">
                                         <div class="time3">
                                               <p>SK</p>
@@ -197,7 +190,7 @@
                                               <p>mibr</p>
                                             </div>
                                         </div>
-                                        <p>1/12/2020 19:00</p>
+                                        <p class="data">1/12/2020 19:00</p>
                                         <div class="calendario">
                                            <div class="time3">
                                             <p>SK</p>
@@ -209,7 +202,7 @@
                                                 <p>Fúria</p>
                                             </div>
                                         </div>
-                                        <p>1/12/2020 19:00</p>
+                                        <p class="data">1/12/2020 19:00</p>
                                         <div class="calendario">
                                             <div class="time3">
                                                   <p>SK</p>
@@ -221,7 +214,7 @@
                                                   <p>mibr</p>
                                                 </div>
                                             </div>
-                                            <p>1/12/2020 19:00</p>
+                                            <p class="data">1/12/2020 19:00</p>
                                             <div class="calendario">
                                                <div class="time3">
                                                 <p>SK</p>
@@ -233,7 +226,7 @@
                                                     <p>Fúria</p>
                                                 </div>
                                             </div>
-                                            <p>1/12/2020 19:00</p>                                           
+                                            <p class="data">1/12/2020 19:00</p>                                           
                                      </div>
                                 </div>
                          </div>
@@ -253,7 +246,7 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-                <div class="links">
+                <div class="links2">
                     <h2>Páginas</h2>
                     <ul>
                         <li><a href="#">Início</a></li>
@@ -273,13 +266,22 @@
         </form>
         <div class="siga-nos">
             <h2>siga-nos</h2>
-            <a href="#"><img src="img/instagram.png" alt="logo do instagram"></a>
-            <a href="#"><img src="img/facebook (1).png" alt="logo do facebook"></a>
-            <a href="#"><img src="img/youtube.png" alt="logo do youtube"></a>
+            <a class="instagram" href="#"><img src="img/instagram.png" alt="logo do instagram"></a>
+            <a class="facebook" href="#"><img src="img/facebook (1).png" alt="logo do facebook"></a>
+            <a class="youtube" href="#"><img src="img/youtube.png" alt="logo do youtube"></a>
         </div>
         </div>
     </footer>
-
+    <script>
+        function botaoDoMenu() {
+          var ulDoMenu = document.getElementById("opçoes");
+          if (ulDoMenu.style.display === "flex") {
+            ulDoMenu.style.display = "none";
+          } else {
+            ulDoMenu.style.display = "flex";
+          }
+        }
+     </script>
 </body>
 
 </html>
